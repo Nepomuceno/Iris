@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{eb75c9bf-5cf5-4de9-9534-b459fafc8779}</ProjectGuid>
+    <ProjectGuid>{EB75C9BF-5CF5-4DE9-9534-B459FAFC8779}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Iris.Contracts</RootNamespace>
@@ -36,7 +36,12 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IEventHandler.cs" />
+    <Compile Include="Messages\EventHandlers\IMessageRecievedEventHandler.cs" />
+    <Compile Include="Messages\EventHandlers\IMessageSentEventHandler.cs" />
+    <Compile Include="Messages\IReceiver.cs" />
+    <Compile Include="Messages\ITransmitter.cs" />
+    <Compile Include="Messages\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
@@ -47,5 +52,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
 </Project>
