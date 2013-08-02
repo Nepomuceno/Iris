@@ -7,6 +7,7 @@ namespace Iris.Contracts.Messages
 {
     public class Message
     {
+        public string MessageId { get; set; }
         public string Source { get; set; }
         public string Destination { get; set; }
         public byte[] Content { get; set; }

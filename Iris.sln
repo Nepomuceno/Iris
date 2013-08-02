@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.20617.1 PREVIEW
+VisualStudioVersion = 12.0.20623.1 VSUPREVIEW
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Contracts", "Iris.Contracts\Iris.Contracts.csproj", "{EB75C9BF-5CF5-4DE9-9534-B459FAFC8779}"
 EndProject
@@ -13,6 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8B86F3
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Server", "Iris.Server\Iris.Server.csproj", "{8CF02596-A4E4-4014-B7A3-B677CDAA7FED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{97B8965E-FDFC-4B79-A541-2999D0845305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Sample.Producer", "Iris.Sample.Producer\Iris.Sample.Producer.csproj", "{C39B11BD-D206-4B96-A5BB-502D5BC9278F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Sample.Consumer", "Iris.Sample.Consumer\Iris.Sample.Consumer.csproj", "{6DC3C8C9-4BC3-4BE6-9F6F-DB445032E45C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,8 +34,20 @@ Global
 		{8CF02596-A4E4-4014-B7A3-B677CDAA7FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF02596-A4E4-4014-B7A3-B677CDAA7FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF02596-A4E4-4014-B7A3-B677CDAA7FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39B11BD-D206-4B96-A5BB-502D5BC9278F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39B11BD-D206-4B96-A5BB-502D5BC9278F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39B11BD-D206-4B96-A5BB-502D5BC9278F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39B11BD-D206-4B96-A5BB-502D5BC9278F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DC3C8C9-4BC3-4BE6-9F6F-DB445032E45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DC3C8C9-4BC3-4BE6-9F6F-DB445032E45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DC3C8C9-4BC3-4BE6-9F6F-DB445032E45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DC3C8C9-4BC3-4BE6-9F6F-DB445032E45C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C39B11BD-D206-4B96-A5BB-502D5BC9278F} = {97B8965E-FDFC-4B79-A541-2999D0845305}
+		{6DC3C8C9-4BC3-4BE6-9F6F-DB445032E45C} = {97B8965E-FDFC-4B79-A541-2999D0845305}
 	EndGlobalSection
 EndGlobal

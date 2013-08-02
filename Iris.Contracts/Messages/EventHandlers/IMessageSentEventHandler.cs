@@ -7,6 +7,6 @@ namespace Iris.Contracts.Messages.EventHandler
 {
     public interface IMessageSentEventHandler
     {
-        void Process(Message message, ITransmitter transmitter);
+        void Process(Message message, IMessageEndpoint endpoint);
     }
 }
